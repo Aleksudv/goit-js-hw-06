@@ -9,7 +9,8 @@ function handleSubmit(ev) {
     } = ev.currentTarget;
 
     if (email.value === "" || password.value === "") {
-   alert('Всі поля повинні бути заповнені');
+        alert('Всі поля повинні бути заповнені');
+        return;
     }
     
     const userData = {

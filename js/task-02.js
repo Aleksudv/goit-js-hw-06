@@ -21,8 +21,9 @@ let markup = ingredients.map(function (el) {
   li.classList.add('item')
   li.textContent = el;
   ingredientsListEl.append(li);
+  return li;
 });
-
+ingredientsListEl.append(...markup);
 
 
 
